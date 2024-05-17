@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/futura-font@1.0.0/styles.min.css">
+    <link rel="stylesheet" href="dist/style.css">
+</head>
+<body>
+    <main class="main">
+        <header class="dashboard__header" style="background-image: url('https://images.unsplash.com/photo-1560439450-57df7ac6dbef?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+            <div class="profile" style="background-image: url(https://images.unsplash.com/photo-1560439450-57df7ac6dbef?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)">
+            </div>
+        </header>
+        <h1 class="dashboard__title">Welness Clinic Name</h1>
+        <section class="list">
+            <header class="list__header">
+              <h2 class="list__title">Manage Customers</h2>
+              <div class="list__actions">
+                <input type="text" class="input" placeholder="Search Customer"> 
+                <button id="addBtn" class="btn"><i class="fa fa-plus" aria-hidden="true"></i>
+                 Add New</button>
+              </div>
+            </header>
+            <div class="table">
+                <div class="table__row table__row--heading">
+                    <p class="table__col table__col--heading">Full Name</p>
+                    <p class="table__col table__col--heading">Email</p>
+                    <p class="table__col table__col--heading">Phone</p>
+                    <p class="table__col table__col--heading">Actions</p>
+                </div>
+                <div class="table__row">
+                    <p class="table__col">Test User</p>
+                    <p class="table__col">user@test.com</p>
+                    <p class="table__col">07778889996</p>
+                    <div class="table__col table__col--actions">
+                        <button class="table__action" data="Previous Recommendations"><i class="fa fa-history" aria-hidden="true"></i>
+                        </button>
+                        <button class="table__action" data="Assign Products"><i class="fa fa-address-card-o" aria-hidden="true"></i>
+                        </button>
+                        <button class="table__action" data="Edit"><i class="fa fa-pencil" aria-hidden="true"></i>
+                        </button>
+                        <button class="table__action confirm" data="Delete">
+                            <i class="fa fa-trash" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+
+
+                <!-- aditional -->
+                <div class="table__row">
+                    <p class="table__col">Test User</p>
+                    <p class="table__col">user@test.com</p>
+                    <p class="table__col">07778889996</p>
+                    <div class="table__col table__col--actions">
+                        <button class="table__action" data="Previous Recommendations"><i class="fa fa-history" aria-hidden="true"></i>
+                        </button>
+                        <button class="table__action" data="Assign Products"><i class="fa fa-address-card-o" aria-hidden="true"></i>
+                        </button>
+                        <button class="table__action" data="Edit"><i class="fa fa-pencil" aria-hidden="true"></i>
+                        </button>
+                        <button class="table__action" data="Delete"><i class="fa fa-trash" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="table__row">
+                    <p class="table__col">Test User</p>
+                    <p class="table__col">user@test.com</p>
+                    <p class="table__col">07778889996</p>
+                    <div class="table__col table__col--actions">
+                        <button class="table__action" data="Previous Recommendations"><i class="fa fa-history" aria-hidden="true"></i>
+                        </button>
+                        <button class="table__action" data="Assign Products"><i class="fa fa-address-card-o" aria-hidden="true"></i>
+                        </button>
+                        <button class="table__action" data="Edit"><i class="fa fa-pencil" aria-hidden="true"></i>
+                        </button>
+                        <button class="table__action" data="Delete"><i class="fa fa-trash" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="table__row">
+                    <p class="table__col">Test User</p>
+                    <p class="table__col">user@test.com</p>
+                    <p class="table__col">07778889996</p>
+                    <div class="table__col table__col--actions">
+                        <button class="table__action" data="Previous Recommendations"><i class="fa fa-history" aria-hidden="true"></i>
+                        </button>
+                        <button class="table__action" data="Assign Products"><i class="fa fa-address-card-o" aria-hidden="true"></i>
+                        </button>
+                        <button class="table__action" data="Edit"><i class="fa fa-pencil" aria-hidden="true"></i>
+                        </button>
+                        <button class="table__action" data="Delete"><i class="fa fa-trash" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="table__row">
+                    <p class="table__col">Test User</p>
+                    <p class="table__col">user@test.com</p>
+                    <p class="table__col">07778889996</p>
+                    <div class="table__col table__col--actions">
+                        <button class="table__action" data="Previous Recommendations"><i class="fa fa-history" aria-hidden="true"></i>
+                        </button>
+                        <button class="table__action" data="Assign Products"><i class="fa fa-address-card-o" aria-hidden="true"></i>
+                        </button>
+                        <button class="table__action" data="Edit"><i class="fa fa-pencil" aria-hidden="true"></i>
+                        </button>
+                        <button class="table__action" data="Delete"><i class="fa fa-trash" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="table__row">
+                    <p class="table__col">Test User</p>
+                    <p class="table__col">user@test.com</p>
+                    <p class="table__col">07778889996</p>
+                    <div class="table__col table__col--actions">
+                        <button class="table__action" data="Previous Recommendations"><i class="fa fa-history" aria-hidden="true"></i>
+                        </button>
+                        <button class="table__action" data="Assign Products"><i class="fa fa-address-card-o" aria-hidden="true"></i>
+                        </button>
+                        <button class="table__action" data="Edit"><i class="fa fa-pencil" aria-hidden="true"></i>
+                        </button>
+                        <button class="table__action" data="Delete"><i class="fa fa-trash" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="table__row">
+                    <p class="table__col">Test User</p>
+                    <p class="table__col">user@test.com</p>
+                    <p class="table__col">07778889996</p>
+                    <div class="table__col table__col--actions">
+                        <button class="table__action" data="Previous Recommendations"><i class="fa fa-history" aria-hidden="true"></i>
+                        </button>
+                        <button class="table__action" data="Assign Products"><i class="fa fa-address-card-o" aria-hidden="true"></i>
+                        </button>
+                        <button class="table__action" data="Edit"><i class="fa fa-pencil" aria-hidden="true"></i>
+                        </button>
+                        <button class="table__action" data="Delete"><i class="fa fa-trash" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="table__row">
+                    <p class="table__col">Test User</p>
+                    <p class="table__col">user@test.com</p>
+                    <p class="table__col">07778889996</p>
+                    <div class="table__col table__col--actions">
+                        <button class="table__action" data="Previous Recommendations"><i class="fa fa-history" aria-hidden="true"></i>
+                        </button>
+                        <button class="table__action" data="Assign Products"><i class="fa fa-address-card-o" aria-hidden="true"></i>
+                        </button>
+                        <button class="table__action" data="Edit"><i class="fa fa-pencil" aria-hidden="true"></i>
+                        </button>
+                        <button class="table__action" data="Delete"><i class="fa fa-trash" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- additional -->
+
+                <div class="table__row">
+                    <p class="table__col">Second User</p>
+                    <p class="table__col">second@test.com</p>
+                    <p class="table__col">03097349996</p>
+                    <div class="table__col table__col--actions">
+                        <button class="table__action" data="Previous Recommendations"><i class="fa fa-history" aria-hidden="true"></i>
+                        </button>
+                        <button class="table__action" data="Assign Products"><i class="fa fa-address-card-o" aria-hidden="true"></i>
+                        </button>
+                        <button  class="table__action" data="Edit"><i class="fa fa-pencil" aria-hidden="true"></i>
+                        </button>
+                        <button class="table__action" data="Delete"><i class="fa fa-trash" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="table__row">
+                    <p class="table__col">Another User</p>
+                    <p class="table__col">user@test.com</p>
+                    <p class="table__col">04353524242</p>
+                    <div class="table__col table__col--actions">
+                        <button class="table__action" data="Previous Recommendations"><i class="fa fa-history" aria-hidden="true"></i>
+                        </button>
+                        <button class="table__action" data="Assign Products"><i class="fa fa-address-card-o" aria-hidden="true"></i>
+                        </button>
+                        <button id="editBtn" class="table__action" data="Edit"><i class="fa fa-pencil" aria-hidden="true"></i>
+                        </button>
+                        <button class="table__action" data="Delete"><i class="fa fa-trash" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="add-edit section--dark">
+            <header class="list__header list__header--dark">
+                <div class="product__details">
+                    <h2 class="list__title">Add Customer</h2>
+                </div>
+                <div class="list__actions">
+                    <button type="button" id="saveBtn" class="btn">Save</button>
+                    <button  type="button" id="cancelBtn" class="btn btn--secondary">Cancel</button>
+                </div>
+              </header>
+            <form class="form form--add-edit">
+                <div class="form__group">
+                    <div class="form__control">
+                        <label class="form__label" for="first_name">First Name</label>
+                        <input id="first_name" class="input input--form">
+                    </div>
+                    <div class="form__control">
+                        <label class="form__label" for="last_name">Last Name</label>
+                        <input id="last_name" class="input input--form">
+                    </div>
+                </div>
+                <div class="form__group">
+                    <div class="form__control">
+                        <label class="form__label" for="email">Email</label>
+                        <input type="email" id="email" class="input input--form">
+                    </div>
+                    <div class="form__control">
+                        <label class="form__label" for="phone">Phone Number</label>
+                        <input id="phone" class="input input--form">
+                    </div>
+                </div>
+                <div class="form__group">
+                    <div class="form__control form__control--single">
+                        <label class="form__label" for="note">Note</label>
+                        <textarea id="note" class="input input--form input--textarea"></textarea>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <section class="list assign">
+            <header class="list__header">
+                <h2 class="list__title">Assign Products to Jane</h2>
+                <div class="list__actions">
+                  <button id="saveAssignBtn" class="btn">
+                   Save</button>
+                   <button id="cancelAssignBtn" class="btn btn--secondary">
+                    Cancel</button>
+                </div>
+              </header>
+              <div class="list__filter">
+                <div class="input__group">
+                    <label for="variation" class="input__label select-label single-product__select-label">Select Category</label>
+                    <select name="variation" id="variation" class="input input--select input--product">
+                        <option value="first_var">Category One</option>
+                        <option value="first_var">Category Two</option>
+                    </select>
+                   </div>
+                   <div class="input__group">
+                    <label for="variation" class="input__label select-label single-product__select-label">Select Brand</label>
+                    <select name="variation" id="variation" class="input input--select input--product">
+                        <option value="first_var">Brand One</option>
+                        <option value="first_var">Brand Two</option>
+                    </select>
+                   </div>
+              </div>
+              <div class="products">
+                    <div class="product">
+                        <input class="product__checkbox" type="checkbox" name="productName" id="productName">
+                        <img src="https://staging2.w-wellness.co.uk/wp-content/uploads/2024/01/AncientBrave_RadiantCollagyn_Front.png" alt="Product" class="product__image">
+                        <div class="product__footer">
+                            <div class="product__details">
+                                <h3 class="product__title">True Collagen</h3>
+                                 <p class="product__price">$29.00</p>
+                            </div>
+                            <button class="btn see-details-btn">See Details</button>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <input class="product__checkbox" type="checkbox" name="productName" id="productName">
+                        <img src="https://staging2.w-wellness.co.uk/wp-content/uploads/2024/01/AncientBrave_RadiantCollagyn_Front.png" alt="Product" class="product__image">
+                        <div class="product__footer">
+                            <div class="product__details">
+                                <h3 class="product__title">True Collagen</h3>
+                                 <p class="product__price">$29.00</p>
+                            </div>
+                            <button class="btn see-details-btn">See Details</button>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <input class="product__checkbox" type="checkbox" name="productName" id="productName">
+                        <img src="https://staging2.w-wellness.co.uk/wp-content/uploads/2024/01/AncientBrave_RadiantCollagyn_Front.png" alt="Product" class="product__image">
+                        <div class="product__footer">
+                            <div class="product__details">
+                                <h3 class="product__title">True Collagen</h3>
+                                 <p class="product__price">$29.00</p>
+                            </div>
+                            <button class="btn see-details-btn">See Details</button>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <input class="product__checkbox" type="checkbox" name="productName" id="productName">
+                        <img src="https://staging2.w-wellness.co.uk/wp-content/uploads/2024/01/AncientBrave_RadiantCollagyn_Front.png" alt="Product" class="product__image">
+                        <div class="product__footer">
+                            <div class="product__details">
+                                <h3 class="product__title">True Collagen</h3>
+                                 <p class="product__price">$29.00</p>
+                            </div>
+                            <button class="btn see-details-btn">See Details</button>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <input class="product__checkbox" type="checkbox" name="productName" id="productName">
+                        <img src="https://staging2.w-wellness.co.uk/wp-content/uploads/2024/01/AncientBrave_RadiantCollagyn_Front.png" alt="Product" class="product__image">
+                        <div class="product__footer">
+                            <div class="product__details">
+                                <h3 class="product__title">True Collagen</h3>
+                                 <p class="product__price">$29.00</p>
+                            </div>
+                            <button class="btn see-details-btn">See Details</button>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <input class="product__checkbox" type="checkbox" name="productName" id="productName">
+                        <img src="https://staging2.w-wellness.co.uk/wp-content/uploads/2024/01/AncientBrave_RadiantCollagyn_Front.png" alt="Product" class="product__image">
+                        <div class="product__footer">
+                            <div class="product__details">
+                                <h3 class="product__title">True Collagen</h3>
+                                 <p class="product__price">$29.00</p>
+                            </div>
+                            <button class="btn see-details-btn">See Details</button>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <input class="product__checkbox" type="checkbox" name="productName" id="productName">
+                        <img src="https://staging2.w-wellness.co.uk/wp-content/uploads/2024/01/AncientBrave_RadiantCollagyn_Front.png" alt="Product" class="product__image">
+                        <div class="product__footer">
+                            <div class="product__details">
+                                <h3 class="product__title">True Collagen</h3>
+                                 <p class="product__price">$29.00</p>
+                            </div>
+                            <button class="btn see-details-btn">See Details</button>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <input class="product__checkbox" type="checkbox" name="productName" id="productName">
+                        <img src="https://staging2.w-wellness.co.uk/wp-content/uploads/2024/01/AncientBrave_RadiantCollagyn_Front.png" alt="Product" class="product__image">
+                        <div class="product__footer">
+                            <div class="product__details">
+                                <h3 class="product__title">True Collagen</h3>
+                                 <p class="product__price">$29.00</p>
+                            </div>
+                            <button class="btn see-details-btn">See Details</button>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <input class="product__checkbox" type="checkbox" name="productName" id="productName">
+                        <img src="https://staging2.w-wellness.co.uk/wp-content/uploads/2024/01/AncientBrave_RadiantCollagyn_Front.png" alt="Product" class="product__image">
+                        <div class="product__footer">
+                            <div class="product__details">
+                                <h3 class="product__title">True Collagen</h3>
+                                 <p class="product__price">$29.00</p>
+                            </div>
+                            <button class="btn see-details-btn">See Details</button>
+                        </div>
+                    </div>
+              </div>
+        </section>
+        <section class="list details">
+            <header class="list__header">
+                <div class="product__details">
+                    <h2 class="list__title">Product Name</h2>
+                    <p class="product__price">$27.00</p>
+                </div>
+                <div class="list__actions">
+                  <button id="addAssignBtn" class="btn">
+                   Add</button>
+                   <button id="cancelAddAssignBtn" class="btn btn--secondary">
+                    Cancel</button>
+                </div>
+              </header>
+              <div class="single-product">
+                <img src="https://staging2.w-wellness.co.uk/wp-content/uploads/2024/01/AncientBrave_TrueCollagen_Jar_Front.png" alt="" class="single-product__image">
+                <div class="single-product__content">
+                   <div class="input__group">
+                    <label for="variation" class="input__label select-label single-product__select-label">Choose Product Variation</label>
+                    <select name="variation" id="variation" class="input input--select input--product">
+                        <option value="first_var">First Variation</option>
+                        <option value="first_var">Second Variation</option>
+                    </select>
+                   </div>
+                    <p class="single-product__description">
+                        Collagen specific amino acids, botanical extracts, vitamin C and Biotin to support glowing skin and normal collagen renewal.
+                    </p>
+                    <h3 class="single-product__heading">Direction For Use</h3>
+                    <p class="single-product__text">Add 2 heaped tsp of powder to a small amount of hot water and mix into paste then top up with 150ml of hot plant milk, milk or water and enjoy.
+                    </p>
+                    <h3 class="single-product__heading">Precautions</h3>
+                    <p class="single-product__text">No known interactions or contraindications, however if the client is taking any medication or has specific health concerns, speak to GP or health practitioner prior to consumption.
+                    </p>
+                </div>
+              </div>
+        </section>
+
+        <section class="list assigned">
+            <header class="list__header">
+                <h2 class="list__title">Recommendations for Jane</h2>
+                <div class="list__actions">
+                   <button id="closeAssignHistoryBtn" class="btn btn--secondary">
+                    Close</button>
+                </div>
+              </header>
+              <div class="recommended-products">
+                <div class="recommended-products__cluster">
+                    <header class="list__header">
+                        <h3 class="list__title list__title--date">Recommended on: 20 April 2024</h3>
+                        <div class="list__actions">
+                           <button id="sendEmailBtn" class="btn">
+                            Send Email</button>
+                            <button id="buyNowBtn" class="btn">
+                                Buy Now</button>
+                        </div>
+                      </header>
+                      <div class="products products--recommended">
+                        <div class="product product--recommended">
+                            <img src="https://staging2.w-wellness.co.uk/wp-content/uploads/2024/01/AncientBrave_RadiantCollagyn_Front.png" alt="Product" class="product__image">
+                            <div class="product__footer">
+                                <div class="product__details">
+                                    <h4 class="product__title">True Collagen</h4>
+                                     <p class="product__price">$36.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product product--recommended">
+                            <img src="https://staging2.w-wellness.co.uk/wp-content/uploads/2024/01/AncientBrave_RadiantCollagyn_Front.png" alt="Product" class="product__image">
+                            <div class="product__footer">
+                                <div class="product__details">
+                                    <h4 class="product__title">True Collagen</h4>
+                                     <p class="product__price">$36.00</p>
+                                </div>
+                            </div>
+                        </div>
+                  </div>
+                </div>
+                <!-- cluster ends -->
+                <div class="recommended-products__cluster">
+                    <header class="list__header">
+                        <h3 class="list__title list__title--date">Recommended on: 25 February 2024</h3>
+                        <div class="list__actions">
+                           <button id="sendEmailBtn" class="btn">
+                            Send Email</button>
+                            <button id="buyNowBtn" class="btn">
+                                Buy Now</button>
+                        </div>
+                      </header>
+                      <div class="products products--recommended">
+                        <div class="product product--recommended">
+                            <img src="https://staging2.w-wellness.co.uk/wp-content/uploads/2024/01/AncientBrave_RadiantCollagyn_Front.png" alt="Product" class="product__image">
+                            <div class="product__footer">
+                                <div class="product__details">
+                                    <h4 class="product__title">True Collagen</h4>
+                                     <p class="product__price">$36.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product product--recommended">
+                            <img src="https://staging2.w-wellness.co.uk/wp-content/uploads/2024/01/AncientBrave_RadiantCollagyn_Front.png" alt="Product" class="product__image">
+                            <div class="product__footer">
+                                <div class="product__details">
+                                    <h4 class="product__title">True Collagen</h4>
+                                     <p class="product__price">$36.00</p>
+                                </div>
+                            </div>
+                        </div>
+                  </div>
+                </div>
+                <!-- cluster ends -->
+                <div class="recommended-products__cluster">
+                    <header class="list__header">
+                        <h3 class="list__title list__title--date">Recommended on: 20 February 2024</h3>
+                        <div class="list__actions">
+                           <button id="sendEmailBtn" class="btn">
+                            Send Email</button>
+                            <button id="buyNowBtn" class="btn">
+                                Buy Now</button>
+                        </div>
+                      </header>
+                      <div class="products products--recommended">
+                        <div class="product product--recommended">
+                            <img src="https://staging2.w-wellness.co.uk/wp-content/uploads/2024/01/AncientBrave_RadiantCollagyn_Front.png" alt="Product" class="product__image">
+                            <div class="product__footer">
+                                <div class="product__details">
+                                    <h4 class="product__title">True Collagen</h4>
+                                     <p class="product__price">$36.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product product--recommended">
+                            <img src="https://staging2.w-wellness.co.uk/wp-content/uploads/2024/01/AncientBrave_RadiantCollagyn_Front.png" alt="Product" class="product__image">
+                            <div class="product__footer">
+                                <div class="product__details">
+                                    <h4 class="product__title">True Collagen</h4>
+                                     <p class="product__price">$36.00</p>
+                                </div>
+                            </div>
+                        </div>
+                  </div>
+                </div>
+                <!-- cluster ends -->
+              </div>
+        </section>
+    </main>
+    <div id="deleteDialog" class="delete__confirmation">
+        <p class="delete__prompt">Are you sure you want to delete Jane?</p>
+       <div class="delete__actions">
+        <button class="btn btn--secondary" id="deleteBtn">Delete</button>
+        <button class="btn" id="cancelDeleteBtn">Cancel</button>
+       </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
