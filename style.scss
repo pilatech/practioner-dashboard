@@ -156,10 +156,12 @@ section {
 .main {
     // position: relative;
     // overflow: hidden;
+    position: absolute;
     min-height: 100%;
     font-size: 18px !important;
     width: 90%;
     margin-left: 10%;
+    right: 0;
 }
 
 .add-edit, .assign , .details, .assigned {
@@ -176,12 +178,14 @@ section {
     visibility: hidden;
     top: 0;
     padding-inline: 20px;
-    padding-top: 50px;
+    // padding-top: 50px;
     transition: .5s;
     -webkit-backface-visibility: hidden; /* Safari */
     backface-visibility: hidden;
     box-shadow: 500px 0 0 #fff,
                 -500px 0 0 #fff;
+    right: 0;
+    max-width: 90%;
 }
 
 // .assigned {
@@ -397,12 +401,12 @@ section {
        position: absolute;
        left: 50%;
        transform: translateX(-50%);
-       top: 50px;
+       top: 30px;
     }
 }
 
 .dashboard-menu {
-        margin-top: 140px;
+        margin-top: 95px;
         width: 100%; 
         padding: 0;
         list-style: none;
@@ -468,7 +472,7 @@ section {
         margin-top: 8px;
     }
 
-    &__link {
+    &--link {
         cursor: pointer;
         
     }
@@ -513,7 +517,7 @@ section {
     margin-block: 100px;
 }
 
-.dashboard h2 {
+.dashboard .bigger {
     margin-bottom: 40px;
     font-size: 28px;
 }
@@ -524,5 +528,57 @@ section {
 
     & > .table__col:first-child {
         text-align: initial;
+    }
+}
+
+.dashboard .revenue .table__row {
+    & > .table__col:nth-child(3) {
+        text-align: initial;
+    }
+}
+
+.dashboard {
+    position: relative;
+}
+
+.orders, .revenue {
+    max-width: 90%;
+    background: #fff;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    transform: translate(-50%, 20px);
+    box-shadow: 500px 0 #fff,
+                -500px 0 #fff;
+    transition: .5s;
+}
+
+.show-orders .orders,
+.show-revenue .revenue {
+    min-height: 100%;
+    height: initial;
+    overflow: initial;
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, 0)
+}
+
+.header--dark {
+    background-color: black;
+    box-shadow: 500px 0 black,
+                -500px 0 black;
+    color: #fff;
+    padding-block: 18px;
+    position: sticky !important;
+    top: 0;
+    width: 100%;
+
+    .btn {
+        color: #fff;
     }
 }

@@ -17,7 +17,7 @@
         <h1 class="dashboard__title">Welness Clinic Name</h1>
     <section>
         <header class="list__header">
-            <h2 class="list__title">Dashboard</h2>
+            <h2 class="list__title bigger">Dashboard</h2>
             <div class="list__actions">
               <input type="date" class="input"> - <input type="date" class="input">  
             </div>
@@ -25,25 +25,21 @@
           <div class="stats">
             <div class="stat">
                 <h3 class="stat__title">7</h3>
+                <p class="stat__text">Recommendations</p>
+            </div>
+            <div class="stat stat--link" id="revenueLink">
+                    <h3 style="color: royalblue" class="stat__title">$12,753.25</h3>
                 <p class="stat__text">Revenue</p>
             </div>
-            <div class="stat">
-                <div class="stat__link">
-                    <h3 style="color: royalblue" class="stat__title">$12,753.25</h3>
-                <p class="stat__text">Recommendations</p>
-                </div>
-            </div>
-            <div class="stat">
-               <div class="stat__link">
+            <div class="stat stat--link" id="ordersLink">
                 <h3 style="color: crimson" class="stat__title">11</h3>
                 <p class="stat__text">Customer Orders</p>
-               </div>
             </div>
           </div>
     </section>
     <section class="section--dashboard">
         <header class="list__header">
-            <h2 class="list__title">Recommendations</h2>
+            <h2 class="list__title bigger">Recommendations</h2>
           </header>
         <div style="margin-top: 0" class="table">
             <div class="table__row table__row--heading">
@@ -106,7 +102,7 @@
     </section>
     <section class="section--dashboard">
         <header class="list__header">
-            <h2 class="list__title">Technical Analysis</h2>
+            <h2 class="list__title bigger">Technical Analysis</h2>
           </header>
           <div class="graphs">
             <div class="graph">
@@ -122,6 +118,186 @@
                 <canvas id="orders"></canvas>
             </div>
           </div>
+    </section>
+
+    <section class="orders">
+        <header class="list__header header--dark">
+            <h2 class="list__title">Orders</h2>
+            <button class="btn btn--secondary" id="closeOrdersBtn">Close</button>
+          </header>
+        <div style="margin-top: 0" class="table">
+            <div class="table__row table__row--heading">
+                <p class="table__col table__col--heading">Name</p>
+                <p class="table__col table__col--heading">Email</p>
+                <p class="table__col table__col--heading">Products Ordered</p>
+                <p class="table__col table__col--heading">Order Total</p>
+            </div>
+            <div class="table__row">
+                <p class="table__col">Test User1</p>
+                <p class="table__col">user@test.com</p>
+                <p class="table__col">
+                    Menopause Formula - Powder x 1,
+                    Women's Health De-Stress x 1,
+                    Optimum - Welcome Pack x 1
+                <p class="table__col">$120.35</p> 
+            </div>
+            <div class="table__row">
+                <p class="table__col">Test User1</p>
+                <p class="table__col">user@test.com</p>
+                <p class="table__col">
+                    Menopause Formula - Powder x 1,
+                    Women's Health De-Stress x 1,
+                    Optimum - Welcome Pack x 1
+                <p class="table__col">$120.35</p> 
+            </div>
+            <div class="table__row">
+                <p class="table__col">Test User1</p>
+                <p class="table__col">user@test.com</p>
+                <p class="table__col">
+                    Menopause Formula - Powder x 1,
+                    Women's Health De-Stress x 1,
+                    Optimum - Welcome Pack x 1
+                <p class="table__col">$120.35</p> 
+            </div>
+            <div class="table__row">
+                <p class="table__col">Test User1</p>
+                <p class="table__col">user@test.com</p>
+                <p class="table__col">
+                    Menopause Formula - Powder x 1,
+                    Women's Health De-Stress x 1,
+                    Optimum - Welcome Pack x 1
+                <p class="table__col">$120.35</p> 
+            </div>
+            <div class="table__row">
+                <p class="table__col">Test User1</p>
+                <p class="table__col">user@test.com</p>
+                <p class="table__col">
+                    Menopause Formula - Powder x 1,
+                    Women's Health De-Stress x 1,
+                    Optimum - Welcome Pack x 1
+                <p class="table__col">$120.35</p> 
+            </div>
+            <div class="table__row">
+                <p class="table__col">Test User1</p>
+                <p class="table__col">user@test.com</p>
+                <p class="table__col">
+                    Menopause Formula - Powder x 1,
+                    Women's Health De-Stress x 1,
+                    Optimum - Welcome Pack x 1
+                <p class="table__col">$120.35</p> 
+            </div>
+            <div class="table__row">
+                <p class="table__col">Test User1</p>
+                <p class="table__col">user@test.com</p>
+                <p class="table__col">
+                    Menopause Formula - Powder x 1,
+                    Women's Health De-Stress x 1,
+                    Optimum - Welcome Pack x 1
+                <p class="table__col">$120.35</p> 
+            </div>
+            <div class="table__row">
+                <p class="table__col">Test User1</p>
+                <p class="table__col">user@test.com</p>
+                <p class="table__col">
+                    Menopause Formula - Powder x 1,
+                    Women's Health De-Stress x 1,
+                    Optimum - Welcome Pack x 1
+                <p class="table__col">$120.35</p> 
+            </div>
+            <div class="table__row">
+                <p class="table__col">Test User1</p>
+                <p class="table__col">user@test.com</p>
+                <p class="table__col">
+                    Menopause Formula - Powder x 1,
+                    Women's Health De-Stress x 1,
+                    Optimum - Welcome Pack x 1
+                <p class="table__col">$120.35</p> 
+            </div>
+            <div class="table__row">
+                <p class="table__col">Test User1</p>
+                <p class="table__col">user@test.com</p>
+                <p class="table__col">
+                    Menopause Formula - Powder x 1,
+                    Women's Health De-Stress x 1,
+                    Optimum - Welcome Pack x 1
+                <p class="table__col">$120.35</p> 
+            </div>
+        </div>
+    </section>
+
+    <section class="revenue">
+        <header class="list__header header--dark">
+            <h2 class="list__title">Revenue</h2>
+            <button id="closeRevenueBtn" class="btn btn--secondary">Close</button>
+        </header>
+        <div class="table">
+            <div class="table__row table__row--heading">
+                <p class="table__col table__col--heading">Name</p>
+                <p class="table__col table__col--heading">Email</p>
+                <p class="table__col table__col--heading">Order Total</p>
+                <p class="table__col table__col--heading">Date</p>
+            </div>
+            <div class="table__row">
+                <p class="table__col">Test User1</p>
+                <p class="table__col">user@test.com</p>
+                <p class="table__col">$135.23</p>
+                <p class="table__col">01/04/2024</p> 
+            </div>
+            <div class="table__row">
+                <p class="table__col">Test User1</p>
+                <p class="table__col">user@test.com</p>
+                <p class="table__col">$135.23</p>
+                <p class="table__col">01/04/2024</p> 
+            </div>
+            <div class="table__row">
+                <p class="table__col">Test User1</p>
+                <p class="table__col">user@test.com</p>
+                <p class="table__col">$135.23</p>
+                <p class="table__col">01/04/2024</p> 
+            </div>
+            <div class="table__row">
+                <p class="table__col">Test User1</p>
+                <p class="table__col">user@test.com</p>
+                <p class="table__col">$135.23</p>
+                <p class="table__col">01/04/2024</p> 
+            </div>
+            <div class="table__row">
+                <p class="table__col">Test User1</p>
+                <p class="table__col">user@test.com</p>
+                <p class="table__col">$135.23</p>
+                <p class="table__col">01/04/2024</p> 
+            </div>
+            <div class="table__row">
+                <p class="table__col">Test User1</p>
+                <p class="table__col">user@test.com</p>
+                <p class="table__col">$135.23</p>
+                <p class="table__col">01/04/2024</p> 
+            </div>
+            <div class="table__row">
+                <p class="table__col">Test User1</p>
+                <p class="table__col">user@test.com</p>
+                <p class="table__col">$135.23</p>
+                <p class="table__col">01/04/2024</p> 
+            </div>
+            <div class="table__row">
+                <p class="table__col">Test User1</p>
+                <p class="table__col">user@test.com</p>
+                <p class="table__col">$135.23</p>
+                <p class="table__col">01/04/2024</p> 
+            </div>
+            <div class="table__row">
+                <p class="table__col">Test User1</p>
+                <p class="table__col">user@test.com</p>
+                <p class="table__col">$135.23</p>
+                <p class="table__col">01/04/2024</p> 
+            </div>
+            <div class="table__row">
+                <p class="table__col">Test User1</p>
+                <p class="table__col">user@test.com</p>
+                <p class="table__col">$135.23</p>
+                <p class="table__col">01/04/2024</p> 
+            </div>
+        </div>
     </section>
     </main>
     <aside class="sidebar">
@@ -153,5 +329,6 @@
     </aside>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="charts.js"></script>
+    <script src="dashboard.js"></script>
 </body>
 </html>
