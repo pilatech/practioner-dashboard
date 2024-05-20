@@ -1,3 +1,5 @@
+@import 'utils';
+
 $dark-brown : #CBBFBB; 
 $light-brown: #F5F2F1;
 $darker-gray: #DCE4F5; 
@@ -11,10 +13,17 @@ body {
     margin: 0;
     font-family: 'Jost', sans-serif;
     color: $text-color;
+    display: flex;
+    min-height: 100vh;
 }
 
 * {
     box-sizing: border-box;
+}
+
+section {
+    max-width: $container-size;
+    margin-inline: auto;
 }
 .dashboard {
     &__header {
@@ -149,6 +158,8 @@ body {
     // overflow: hidden;
     min-height: 100%;
     font-size: 18px !important;
+    width: 90%;
+    margin-left: 10%;
 }
 
 .add-edit, .assign , .details, .assigned {
@@ -156,16 +167,19 @@ body {
     background: #fff;
     width: $container-size;
     height: 0;
-    // overflow: hidden;
-    min-height: 100%;
+    overflow: hidden;
+    min-height: 0;
     position: absolute;
     left: 50%;
     transform: translate(-50%, 100%);
     opacity: 0;
+    visibility: hidden;
     top: 0;
     padding-inline: 20px;
     padding-top: 50px;
     transition: .5s;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
     box-shadow: 500px 0 0 #fff,
                 -500px 0 0 #fff;
 }
@@ -185,7 +199,7 @@ body {
 .show-history .assigned {
     height: initial;
     overflow: initial;
-    display: block;
+    visibility: visible;
     min-height: 100%;
     transform: translate(-50%, 0);
     opacity: 1;
@@ -367,4 +381,148 @@ body {
     height: 100%;
     background: #fff;
     border-radius: 3px;
+}
+
+.sidebar {
+    order: -1;
+    width: 10%;
+    background: $text-color;
+    position: fixed;
+    height: 100%;
+}
+
+.logo {
+    &__link {
+        display: inline-block;
+       position: absolute;
+       left: 50%;
+       transform: translateX(-50%);
+       top: 50px;
+    }
+}
+
+.dashboard-menu {
+        margin-top: 140px;
+        width: 100%; 
+        padding: 0;
+        list-style: none;
+   
+    &__link {
+        color: #fff;
+        text-decoration: none;
+        background: #000;
+        width: 100%;
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        padding: 15px;
+        margin-bottom: 3px;
+        transition: .25s;
+
+        &:hover, &--active {
+            background: $dark-brown;
+        }
+    }
+}
+
+.dashboard__header:hover .edit-image, .profile:hover .edit-image {
+    opacity: 1;
+}
+
+.edit-image {
+    border: none;
+    background: $dark-brown;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    border-radius: 3px;
+    opacity: .1;
+    cursor: pointer;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-block: 50px;
+}
+
+.stat {
+    border: 2px solid $dark-brown;
+    padding: 40px 120px;
+    border-radius: $border-radius;
+    text-align: center;
+
+    &__title {
+        margin: 0;
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    &__text {
+        margin: 0;
+        font-size: 15px;
+        margin-top: 8px;
+    }
+
+    &__link {
+        cursor: pointer;
+        
+    }
+}
+
+.graphs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.graph {
+
+    width: 30%;
+
+    &__title {
+        margin: 0;
+        font-size: 19px;
+        font-weight: 500;
+        margin-bottom: 30px;
+    }
+
+    &__details {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    &__color-box {
+        background: crimson;
+        height: 20px; 
+        width: 50px;
+    }
+        &__text {
+            margin: 0;
+        }
+}
+
+.section--dashboard {
+    border: 2px solid $dark-brown;
+    border-radius: $border-radius;
+    padding: 40px;
+    margin-block: 100px;
+}
+
+.dashboard h2 {
+    margin-bottom: 40px;
+    font-size: 28px;
+}
+
+.dashboard .table__row {
+    justify-content: space-between;
+    text-align: center;
+
+    & > .table__col:first-child {
+        text-align: initial;
+    }
 }
